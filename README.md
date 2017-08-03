@@ -4,6 +4,12 @@ An open source 3d slide presentation made in the Godot Engine
 
 <img src="docs/doc-gif-1.gif" width="400" style="margin: auto;width: 50%;border: 3px solid green;adding: 10px;" />
 
+## Demos
+
+- macOS: [3DPresenationGodotDemo_mac.zip](demos/3DPresenationGodotDemo_mac.zip)
+- windows: [3DPresenationGodotDemo_win.zip](demos/3DPresenationGodotDemo_win.zip)
+- linux (untested): [3DPresenationGodotDemo_linux.zip](demos/3DPresenationGodotDemo_linux.zip)
+
 ## Supports
 
 Images and Video Textures.

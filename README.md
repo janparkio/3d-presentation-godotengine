@@ -6,9 +6,9 @@ An open source 3d slide presentation made in the Godot Engine
 
 ## Demos
 
-- macOS: [3DPresentationGodotDemo_mac.zip](demos/3DPresentationGodotDemo_mac.zip)
-- windows: [3DPresentationGodotDemo_win.zip](demos/3DPresentationGodotDemo_win.zip)
-- linux (untested): [3DPresentationGodotDemo_linux.zip](demos/3DPresentationGodotDemo_linux.zip)
+- macOS: [3DPresentationGodotDemo_mac.zip](https://github.com/pakchano/3d-presentation-godotengine/releases/download/0.9/3DPresentationGodotDemo_mac.zip)
+- windows: [3DPresentationGodotDemo_win.zip](https://github.com/pakchano/3d-presentation-godotengine/releases/download/0.9/3DPresentationGodotDemo_win.zip)
+- linux (untested): [3DPresentationGodotDemo_linux.zip](https://github.com/pakchano/3d-presentation-godotengine/releases/download/0.9/3DPresentationGodotDemo_linux.zip)
 
 ## Supports
 

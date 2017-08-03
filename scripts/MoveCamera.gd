@@ -1,3 +1,9 @@
+#title           :MoveCamera.gd
+#description     :This scripts moves a kinematic body by the name of "MoveCamera"
+#				  modifies the image slides and videos dynamically and in an orderly manner.
+#author		 	 :JanPark
+#version         :1.0
+
 extends KinematicBody
 
 onready var TweenNode = get_node("Tween")
@@ -11,16 +17,23 @@ var is_fullscreen = false
 var slide_order_num = 1
 
 var slide_video_num = 1
-var slide_video_name = "res://videos/video_"
-var slide_video_ext = ".ogv"
+# modify this variable if you have a different video presenation name
+export var slide_video_name = "res://videos/video_"
+# currently there is no other support for videos other than ogv
+# which means you would not be modifying this anytime soon (02.08.2017 - Jan Park)
+export var slide_video_ext = ".ogv"
 var slide_video_current_name = ""
+# also modify the maximum number of video slides
 const MAX_SLIDE_VIDEO_NUM = 1
 var slide_video_on = false
 
 var slide_file_num = 1
-var slide_file_name = "res://presentations/basic_presentation_"
-var slide_file_ext = ".jpg"
+# modify this variable if you have a different presenation name
+export var slide_file_name = "res://presentations/basic_presentation_"
+# do not forget the extension of the files
+export var slide_file_ext = ".jpg"
 var slide_file_current_name = ""
+# also modify the maximum number of image slides
 const MAX_SLIDE_FILE_NUM = 9
 
 var slide_node_pressed = false
@@ -98,10 +111,14 @@ func _input(event):
 		slide_node_pressed = false
 		slide_node_on = false
 
+### main function that controls movement
 func move_slide():
+	# comment or add more condision if you are using videos on your slides.
+	# eliminate the else statement if you are just using images
 	if (slide_order_num == 3 and not slide_video_on):
 		play_video_slide()
 	else:
+	# do not comment out the following code
 		play_image_slide()
 
 func play_image_slide():

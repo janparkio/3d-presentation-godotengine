@@ -180,6 +180,10 @@ collide_with/rigid = true
 collide_with/character = true
 collision/margin = 0.001
 script/script = ExtResource( 1 )
+slide_video_name = "res://videos/video_"
+slide_video_ext = ".ogv"
+slide_file_name = "res://presentations/basic_presentation_"
+slide_file_ext = ".jpg"
 
 [node name="Camera" type="Camera" parent="MoveCamera"]
 
